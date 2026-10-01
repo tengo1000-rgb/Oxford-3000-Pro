@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#3157d5">
+<meta name="description" content="Oxford 3000 Pro — самостоятельный тренажёр английских слов с умными повторениями, аудио и рассказами до 1000 слов.">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Oxford Pro">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="styles.css">
+<title>Oxford 3000 Pro</title>
+</head>
+<body>
+<div id="app" class="app">
+  <header class="topbar">
+    <div><div class="brand">Oxford 3000 Pro</div><div class="tagline">Новое отдельное приложение · 3000 слов</div></div>
+    <div class="total-pill" id="totalPill">0 / 3000</div>
+  </header>
+
+  <section id="installBox" class="install-box hidden">
+    <div><b>📱 Установить приложение</b><div class="small">Будет открываться отдельно и работать офлайн.</div></div>
+    <button id="installBtn" class="btn primary">Установить</button>
+  </section>
+
+  <nav class="nav" aria-label="Главное меню">
+    <button data-page="home" class="navbtn active">🏠<span>Сегодня</span></button>
+    <button data-page="learn" class="navbtn">📖<span>Учить</span></button>
+    <button data-page="quiz" class="navbtn">🎯<span>Тесты</span></button>
+    <button data-page="story" class="navbtn">📚<span>Рассказы</span></button>
+    <button data-page="hard" class="navbtn">⭐<span>Сложные</span></button>
+    <button data-page="settings" class="navbtn">⚙️<span>Настройки</span></button>
+  </nav>
+
+  <main>
+    <section id="page-home" class="page active"></section>
+    <section id="page-learn" class="page"></section>
+    <section id="page-quiz" class="page"></section>
+    <section id="page-story" class="page"></section>
+    <section id="page-hard" class="page"></section>
+    <section id="page-settings" class="page"></section>
+  </main>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

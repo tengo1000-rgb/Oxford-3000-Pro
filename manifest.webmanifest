@@ -1,0 +1,26 @@
+{
+  "name": "Oxford 3000 Pro — English Trainer",
+  "short_name": "Oxford Pro",
+  "description": "Самостоятельный тренажёр Oxford 3000 с переводом, умными повторениями, тестами, аудио и рассказами до 1000 слов.",
+  "lang": "ru",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fb",
+  "theme_color": "#3157d5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
